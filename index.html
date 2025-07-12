@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Agencies Website</title>
+    <script src="https://kit.fontawesome.com/d4b36fedfd.js" crossorigin="anonymous"></script>
+<style>
+        /* others style */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.raleway-normal {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a{text-decoration: none;   
+}
+.btn-pri{
+        background-color: #4E47FF;
+        border-style: none;
+        border-radius: 3px;
+        padding: 18px 35px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        align-items: center;
+}
+.txt-align{
+    text-align: center;
+    
+}
+.color{
+    color: #c3bebe;
+}
+/* nav and banner style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 100px;
+}
+body{
+    background-color: white;
+}
+
+.nav-title{
+    font-weight: 800;
+    font-size: 35px;
+    color: #4E47FF;
+}
+.banner{
+    align-items: center;
+    text-align: center;
+}
+.banner .txt-align{
+    font-size: 40px;
+    padding: 158px 117.5px 0 117.5px;
+    justify-content: center;
+}
+.banner-img{
+    background-image: url(Assets/Hero-bg.png);
+    width: 100%;
+    max-height: 698px;
+}
+
+.btn-sec{
+  
+    background-color: #4E47FF;
+        border-style: none;
+        border-radius: 3px;
+        padding: 18px 35px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        align-items: center;
+        
+
+}
+        /* action style */
+        .action{
+            display: flex;
+            justify-content: space-between;
+            margin: 220px;
+            /* gap: 20px; */
+        }
+        .act-rgt img{
+            max-width: 328px;
+            height:;
+            border-radius: 48px;
+        }
+        .act-lft h4{
+            font-size: 42px;
+            font-weight: 700;
+        }
+        .btn-pri2{
+        background-color: #4E47FF;
+        border-style: none;
+        border-radius: 3px;
+        padding: 10px 30px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        align-items: center;
+        }
+        .about-items{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .banner1{
+            text-align: center;
+            border-radius: 10px;
+            background-color: #eef2ff;
+            margin: 116px 140px 0 140px;
+            padding: 30px 0;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+       
+        .item-title{
+            font-size: 50px;
+            font-weight: 700;
+            color: #4E47FF;
+        }
+        .item-des{
+            font-weight: 100;
+            margin: 0;
+        }
+        /* ******************************************users Review ***********************/
+        .description{
+            font-size: 40px;
+        }
+        .review{
+            margin: 137px 140px;
+        }
+        .comments{
+            background-color: #eef2ff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .comments-con{
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .com-info{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .com-info img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .comments i{
+            color: rgb(242, 242, 97);
+        }
+        /* *****************************focus******************************************** */
+        .focus{
+            align-items: center;
+        }
+        .img-bg{
+            margin: 10px 0px 40px 10px;
+            align-items: center;
+        }
+        /************************comment box ********************/
+        .text{
+            font-size: 50px;
+            font-weight: 700;
+        }
+       
+        .comment-box {
+            display: flex;
+            margin: 102px 150px;
+            padding: 10px;
+            gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #eef2ff;
+            border-radius: 5px;
+            
+        }
+        .comment-box form input[type="text"], .comment-box form input[type="email"], .comment-box form textarea{
+            height: 50px;
+            border-radius: 5px;
+            background-color: #fff;
+            width: 80%;
+            padding: 10px 20px;
+            margin: 0 0 0 25px;
+            border: none;
+        }
+        form button {
+      width: 100%;
+      padding: 15px 4px ;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    /* footer style */
+    .container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;
+  max-width: 800px;
+  margin: 60px auto;
+  border-radius: 10px;
+}
+
+.logo {
+  color: #007bff;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 16px;
+  color: #c3bebe;
+  margin-bottom: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  color: #333;
+}
+        /* .raleway-normal h4{ */
+            /* font-weight: 700; */
+        /* } */
+    </style>
+</head>
+<body class="inter-normal">
+    <div class="banner-img">
+    <header class=" ">
+        <nav class="inter-normal">
+            <h3 class="nav-title">LOGO</h3>
+            <a href=""><button class="btn-pri">Sign Up</button></a>
+        </nav>
+        <section class="banner">
+         <h4 class="txt-align ">Cool Dark UI Template for <br> Webflow Agencies!</h4>
+        <div class="txt-align"><a href=""><button class="btn-sec">stay focused</button></a></div>
+        </section>
+    </header>
+    </div>
+    <main>
+        <!----------------------------- action ------------------------------------>
+        <section class="action">
+            <div class="act-lft">
+                <h4>See It In Action</h4>
+                <p class="color">Explore the live preview and imagine your <br> brand in this bold new look.</p>
+                <button class="inter-normal btn-pri2">Lunch Live Preview</button>
+            </div>
+            <div class="act-rgt">
+                <img src="Assets/wc-mini.png" alt="">
+            </div>
+        </section>
+        <!------------------------------------product  ---------------------------->
+        <section class="banner1">
+            <h3 class="description">Joined Thousands of Productive Users</h3>
+            
+            <div class="about-items">
+                <!-- .about-item>4p.item-title+p.item-des-->
+                <div class="about-item">
+                 <p class="item-title">50K</p>
+                 <p class="item-des color">Active Users</p>
+                </div>
+                <div class="about-item">
+                 <p class="item-title">2M+</p>
+                 <p class="item-des color">Focus Sassions</p>
+                </div>
+                <div class="about-item">
+                 <p class="item-title">95%</p>
+                 <p class="item-des color">Satisfaction Rate</p>
+                </div>
+                
+             </div>
+            
+        </section>
+
+        <!-- ------------------------users comments ----------------->
+         <section class="review">
+            <h3 class="description banner">What our users say</h3>
+            <div class="comments-con">
+                <div class="comments">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4 class="com-title">Loved by Designers</h4>
+                    <p class="com-detail color">"This template instantly leveled up our presence.” – Studio Vertex</p>
+                    <div class="com-info">
+                        <img src="Assets/avatar.png" alt="">
+                        <div class="reviewer-details">
+                            <p class="rev-name color">Reviewer Name</p>
+                            <p class="rev-date color">date</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comments">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4 class="com-title">Loved by Designers</h4>
+                    <p class="com-detail color">"This template instantly leveled up our presence.” – Studio Vertex</p>
+                    <div class="com-info">
+                        <img src="Assets/avatar.png" alt="">
+                        <div class="reviewer-details">
+                            <p class="rev-name color">Reviewer Name</p>
+                            <p class="rev-date color">date</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comments">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4 class="com-title">Loved by Designers</h4>
+                    <p class="com-detail color">"This template instantly leveled up our presence.” – Studio Vertex</p>
+                    <div class="com-info">
+                        <img src="Assets/avatar.png" alt="">
+                        <div class="reviewer-details">
+                            <p class="rev-name color">Reviewer Name</p>
+                            <p class="rev-date color">date</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+         </section>
+        <!-- ------------------------------focus eye ----------------------->
+         <section class="focus">
+            <h4 class="banner description">Ready to focus better</h4>
+            <p class="com-detail color" style="text-align: center;">"This template instantly leveled up our presence.” – Studio Vertex</p>
+           <div class="txt-align"><button class="btn-sec">Get Started Free</button></div>
+           <img src="Assets/wc-big.png" alt="" class="img-bg">
+         </section>
+         <section class="comment-box">
+            
+            <div class="com-col">
+            <h4 class="text com-col">Let’s Get in <br> Touch</h4>
+        </div>
+        <div class="com-col">
+            <form action="">
+                
+                <br>
+                <input type="email" id="" placeholder="Enter your email">
+                <br>
+                <br>
+                <input type="text" id="" placeholder="Enter your name">
+                <br>
+                <br>
+                <textarea name="" cols="40" rows="05" id="" placeholder="Write your message..." class="inter-normal"></textarea> <br>
+                <button type="submit" >Get in touch</button>
+            </form>
+        </div>
+         </section>
+    </main>
+    <footer class="container">
+        <h1 class="logo">LOGO</h1>
+        <p class="tagline">
+          Ready to elevate your online presence? Contact us today to discuss your project and discover how we can bring your vision to life.
+        </p>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">How it Works</a>
+          <a href="#">Services</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
